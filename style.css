@@ -1,0 +1,181 @@
+body{
+   font-family: 'Montserrat', sans-serif;
+   background: #faf5f5;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+aside
+{
+width: 370px;
+background: #1E2939;
+}
+
+.cv-photo
+{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.LeftHeader
+{
+color: #FFFFFF;
+}
+.contact-links
+{
+    color: #FFFFFF;
+    font-size: 14px;
+   
+}
+.Bold
+{
+    font-weight: 700;
+}
+.ListSecondary
+{
+    color: #FB6D3A;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-position: inside;
+
+}
+.LeftSkills
+{
+    color: #FFFFFF;
+    line-height: 24px;
+    margin-left: 0px;
+    padding-left: 0px;
+    
+}
+.contact-block
+{
+    margin-top: 51px ;
+    margin-left: 25px ;
+}
+.TechSkillsBlock
+{
+    margin-top: 47px ;
+    margin-left: 25px ;
+}
+
+main
+{
+    
+padding: 102px 88px 102px 88px;
+
+}
+.main-description
+{
+    text-align: justify;
+    width: 400px ;
+}
+.job-title
+{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;   
+}
+h1
+{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+
+}
+.description
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color:#595959;
+    margin-bottom: 40px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+.projects 
+{
+    width: 485px;
+    margin-bottom: 51px ;
+
+}
+.list-primary
+{
+font-weight:700 ;
+font-size: 14px;
+line-height: 24px;
+color: #000000;
+padding-left: 0;
+list-style-position: inside;
+
+
+}
+.list-primary-item
+{
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #595959;
+text-decoration: none;
+
+}
+.header-primary
+{
+    font-size: 700;
+    font-weight: 22px;
+    line-height: 27px;
+    margin-bottom: 12px;
+}
+.job-name
+{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+
+}
+.highlight
+{
+color: #FB6D3A;
+
+}
+.job-date
+{
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: #a8a8a8;
+
+}
+.National
+{
+font-size: bold;
+Font-size: 16px;
+line-height: 20px;
+line-height: 100%;
+color:#FB6D3A;
+
+}
+.managment
+{
+    Font-style: Bold;
+    Font-size: 14px;
+    line-height: 17px;
+    line-height: 100%;
+    color: #000000;
+
+}
+
+.nav-bar
+{
+    text-align: justify;
+}
+
