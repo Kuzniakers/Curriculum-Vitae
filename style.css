@@ -76,7 +76,7 @@ padding: 102px 88px 102px 88px;
 }
 .main-description
 {
-   position: relative;
+
     margin-top: 0;
     text-align: justify;
     width: 400px ;
@@ -84,7 +84,7 @@ padding: 102px 88px 102px 88px;
 }
 .job-title
 {
-    position: absolute;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
