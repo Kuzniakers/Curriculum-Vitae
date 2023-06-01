@@ -78,6 +78,7 @@ margin-top: -20px;
 {
     text-align: justify;
     width: 400px ;
+   margin-top: -20px; 
 }
 .job-title
 {
@@ -180,11 +181,3 @@ color:#FB6D3A;
     text-align: justify;
 }
 
-.main-description {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-description .job-title {
-    order: -1;
-}
