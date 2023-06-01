@@ -179,3 +179,11 @@ color:#FB6D3A;
     text-align: justify;
 }
 
+.main-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-description .job-title {
+    order: -1;
+}
