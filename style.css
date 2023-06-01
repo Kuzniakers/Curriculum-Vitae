@@ -71,20 +71,21 @@ main
 {
     
 padding: 102px 88px 102px 88px;
-margin-top: -20px; 
+
 
 }
 .main-description
 {
     text-align: justify;
     width: 400px ;
-   margin-top: -20px; 
+
 }
 .job-title
 {
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;   
+    line-height: 17px;
+    margin-top: -50px;
 }
 h1
 {
