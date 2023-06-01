@@ -72,12 +72,10 @@ main
     
 padding: 102px 88px 102px 88px;
 
-
 }
 .main-description
 {
 
-    margin-top: 0;
     text-align: justify;
     width: 400px ;
 
@@ -88,7 +86,6 @@ padding: 102px 88px 102px 88px;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    top: 0px;
 }
 h1
 {
