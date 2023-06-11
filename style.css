@@ -181,10 +181,4 @@ color:#FB6D3A;
     text-align: justify;
 }
 
-.center-text 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-}
+
