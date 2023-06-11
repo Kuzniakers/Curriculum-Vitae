@@ -181,7 +181,9 @@ color:#FB6D3A;
     text-align: justify;
 }
 
-.center-text {
+.center-text 
+{
+    margin-top:30px;
     display: flex;
     justify-content: center;
     align-items: center;
