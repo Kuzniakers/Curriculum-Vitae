@@ -183,10 +183,8 @@ color:#FB6D3A;
 
 .center-text 
 {
-    margin-top:5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     font-style: italic;
 }
