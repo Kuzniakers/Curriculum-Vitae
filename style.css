@@ -6,8 +6,8 @@ body{
 .wrapper{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: center;
+    width: 1200px;
     margin: 0 auto;
     background: #FFFFFF;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
@@ -15,7 +15,7 @@ body{
 
 aside
 {
-width: 100%;
+width: 370px;
 background: #1E2939;
 }
 
@@ -59,26 +59,23 @@ color: #FFFFFF;
 .contact-block
 {
     margin-top: 51px ;
-    margin-left: 25px ;
+    margin-left: 40px ;
 }
 .TechSkillsBlock
 {
     margin-top: 47px ;
-    margin-left: 25px ;
+    margin-left: 40px ;
 }
 
 main
 {
-width: 100%;   
+    
 padding: 102px 88px 102px 88px;
-margin-top: -20px; 
 
 }
 .main-description
 {
-    text-align: justify;
-    width: 400px ;
-   margin-top: -20px; 
+        width: 400px ;
 }
 .job-title
 {
@@ -159,17 +156,20 @@ color: #a8a8a8;
 }
 .National
 {
-    font-size: 16px;
-    line-height: 20px;
-    color:#FB6D3A;
-}
+font-size: bold;
+Font-size: 16px;
+line-height: 20px;
+line-height: 100%;
+color:#FB6D3A;
+
 }
 .managment
 {
-    font-style: bold;
-    font-size: 14px;
+    Font-style: Bold;
+    Font-size: 14px;
     line-height: 17px;
+    line-height: 100%;
     color: #000000;
-}
 
+}
 
