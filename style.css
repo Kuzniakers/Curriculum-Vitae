@@ -159,22 +159,17 @@ color: #a8a8a8;
 }
 .National
 {
-font-size: bold;
-Font-size: 16px;
-line-height: 20px;
-line-height: 100%;
-color:#FB6D3A;
-
+    font-size: 16px;
+    line-height: 20px;
+    color:#FB6D3A;
+}
 }
 .managment
 {
-    Font-style: Bold;
-    Font-size: 14px;
+    font-style: bold;
+    font-size: 14px;
     line-height: 17px;
-    line-height: 100%;
     color: #000000;
-
 }
-
 
 
