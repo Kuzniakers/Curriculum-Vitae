@@ -1,190 +1,171 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background: #faf5f5;
-    line-height: 1.6; /* Domyślne ustawienie wysokości linii */
-}
-
-*, *::before, *::after {
-    box-sizing: border-box; /* Wliczanie paddingu i borderu do rozmiaru elementu */
 }
 
 .wrapper {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
     width: 1200px;
-    margin: 20px auto; /* Dodano margines górny i dolny */
+    margin: 0 auto;
     background: #FFFFFF;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Układ kolumn */
-aside.nav-bar {
-    width: 30%; /* Procentowa szerokość, np. 30% */
+aside {
+    width: 370px;
     background: #1E2939;
-    padding: 20px;
 }
 
-main {
-    width: 70%; /* Procentowa szerokość, np. 70% */
-    padding: 20px;
+.cv-photo {
+    margin-top: 30px;
+    margin-left: 40px;
 }
 
-
-/* Style dla elementów nawigacji bocznej */
-.left-header {
+.LeftHeader {
     color: #FFFFFF;
-    margin-bottom: 15px; /* Dodano odstęp */
 }
 
 .contact-links {
     color: #FFFFFF;
     font-size: 14px;
-    display: block; /* Każdy link w nowej linii */
-    margin-bottom: 5px; /* Odstęp między linkami */
 }
 
-.bold {
+.Bold {
     font-weight: 700;
 }
 
-.list-secondary {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.list-secondary li {
-    color: #FFFFFF;
+.ListSecondary {
+    color: #FB6D3A;
     font-size: 14px;
-    margin-bottom: 5px; /* Dodano odstęp */
+    line-height: 24px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-position: inside;
 }
 
-.left-skills {
+.LeftSkills {
     color: #FFFFFF;
     line-height: 24px;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
-.contact-block,
-.tech-skills-block {
-    margin-bottom: 20px; /* Większy odstęp między blokami */
+.contact-block {
+    margin-top: 51px;
+    margin-left: 40px;
+    margin-right: 8px;
 }
 
+.TechSkillsBlock {
+    margin-top: 47px;
+    margin-left: 40px;
+}
 
-/* Style dla głównej części */
+main {
+    padding: 102px 88px 102px 88px;
+}
+
 .main-description {
-    margin-bottom: 30px; /* Większy odstęp od opisu */
-    word-wrap: break-word; /* Łamanie długich słów */
+    width: 400px;
 }
 
 .job-title {
     font-weight: 700;
-    font-size: 1.2em; /* Użyto em, aby skalowało się z rozmiarem fontu */
-    line-height: 1.4;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 h1 {
     font-weight: 700;
-    font-size: 2.5em; /* Użyto em, aby skalowało się z rozmiarem fontu */
-    line-height: 1.2; /* Skrócono odstęp */
-    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 55px;
 }
 
 .description {
     font-weight: 400;
     font-size: 14px;
+    line-height: 24px;
     color: #595959;
+    margin-bottom: 40px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-position: inside;
 }
 
-/* Projekty */
-.header-primary {
-    font-weight: 700;
-    font-size: 1.5em; /* Użyto em, aby skalowało się z rozmiarem fontu */
-    margin-bottom: 15px;
+.projects {
+    width: 485px;
+    margin-bottom: 51px;
 }
 
 .list-primary {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.list-primary li {
-    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    padding-left: 0;
+    list-style-position: inside;
 }
 
 .list-primary-item {
+    font-weight: 400;
     font-size: 14px;
+    line-height: 24px;
     color: #595959;
     text-decoration: none;
 }
 
-/* Doświadczenie zawodowe */
-.job-name {
-    font-size: 1.1em; /* Użyto em, aby skalowało się z rozmiarem fontu */
+.header-primary {
     font-weight: 700;
-    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 12px;
+}
+
+.job-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
 }
 
 .highlight {
     color: #FB6D3A;
 }
 
+.highlight a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a:link, a:visited {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a:hover, a:focus {
+    text-decoration: none !important;
+    color: inherit;
+    outline: none;
+}
+
 .job-date {
     font-weight: 400;
     font-size: 12px;
+    line-height: 15px;
     color: #a8a8a8;
-    margin-bottom: 10px;
 }
 
-.description {
-    padding-left: 20px;
-    margin-bottom: 15px;
-}
-
-
-/* Edukacja */
-.national {
+.National {
     font-weight: bold;
-    font-size: 1.1em; /* Użyto em, aby skalowało się z rozmiarem fontu */
+    font-size: 16px;
+    line-height: 20px;
     color: #FB6D3A;
-    margin-bottom: 5px;
 }
 
-.management {
+.managment {
     font-weight: bold;
     font-size: 14px;
-    margin-bottom: 10px;
-}
-
-/* Style dla linków */
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #FB6D3A;
-}
-
-/* Media Queries dla responsywności */
-@media (max-width: 1200px) {
-    .wrapper {
-        width: 95%;
-    }
-}
-
-@media (max-width: 768px) {
-    .wrapper {
-        flex-direction: column;
-    }
-    aside.nav-bar,
-    main {
-        width: 100%;
-    }
-    aside.nav-bar {
-        padding: 10px;
-    }
-    main {
-        padding: 10px;
-    }
+    line-height: 17px;
+    color: #000000;
 }
