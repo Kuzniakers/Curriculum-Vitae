@@ -1,107 +1,171 @@
-/* Resetowanie stylów */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Ogólny styl dla strony */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+    background: #faf5f5;
 }
 
-/* Wrapper */
 .wrapper {
     display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Główna część */
-main {
-    flex: 2;
-    padding: 20px;
-}
-
-/* Nawigacja (kontakt) */
 aside {
-    flex: 1;
-    background-color: #2E3A4A;
-    padding: 20px;
-    border-radius: 10px;
-    color: #fff;
+    width: 370px;
+    background: #1E2939;
 }
 
-/* Sekcja kontaktu */
-.contact-block {
-    margin-top: 20px;
+.cv-photo {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.LeftHeader {
+    color: #FFFFFF;
 }
 
 .contact-links {
-    margin: 10px 0;
-    color: #FB6D3A;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.contact-links a {
-    color: #FB6D3A;
-    text-decoration: none;
-}
-
-.contact-links a:hover {
-    text-decoration: underline;
-}
-
-/* Nagłówki */
-.LeftHeader {
     color: #FFFFFF;
-    font-size: 22px;
-    margin-bottom: 12px;
-}
-
-/* Lista projektów */
-.list-primary {
-    list-style-type: decimal;
-    margin: 20px 0;
-}
-
-.list-primary-item {
-    color: #595959;
-    text-decoration: none;
-    font-weight: 400;
     font-size: 14px;
 }
 
-.list-primary-item:hover {
-    text-decoration: underline;
+.Bold {
+    font-weight: 700;
 }
 
-/* Styl nagłówków sekcji */
-.header-primary {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 10px;
+.ListSecondary {
+    color: #FB6D3A;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.LeftSkills {
+    color: #FFFFFF;
+    line-height: 24px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.contact-block {
+    margin-top: 51px;
+    margin-left: 40px;
+    margin-right: 8px;
+}
+
+.TechSkillsBlock {
+    margin-top: 47px;
+    margin-left: 40px;
+}
+
+main {
+    padding: 102px 88px 102px 88px;
+}
+
+.main-description {
+    width: 400px;
 }
 
 .job-title {
-    font-size: 18px;
     font-weight: 700;
-    color: #333;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    margin-bottom: 40px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.projects {
+    width: 485px;
+    margin-bottom: 51px;
+}
+
+.list-primary {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.list-primary-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    text-decoration: none;
+}
+
+.header-primary {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 12px;
+}
+
+.job-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.highlight {
+    color: #FB6D3A;
+}
+
+.highlight a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a:link, a:visited {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a:hover, a:focus {
+    text-decoration: none !important;
+    color: inherit;
+    outline: none;
 }
 
 .job-date {
+    font-weight: 400;
     font-size: 12px;
-    color: #777;
-    margin-bottom: 10px;
+    line-height: 15px;
+    color: #a8a8a8;
+}
+
+.National {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FB6D3A;
+}
+
+.managment {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
 }
