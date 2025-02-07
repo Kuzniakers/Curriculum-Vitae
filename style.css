@@ -169,3 +169,14 @@ a:hover, a:focus {
     line-height: 17px;
     color: #000000;
 }
+.ListSecondary-link {
+    color: #FB6D3A;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.ListSecondary-link:hover {
+    text-decoration: underline;
+}
