@@ -117,8 +117,8 @@ h1 {
 }
 
 .header-primary {
-    font-size: 700;
-    font-weight: 22px;
+    font-weight: 700;
+    font-size: 22px;
     line-height: 27px;
     margin-bottom: 12px;
 }
@@ -134,13 +134,19 @@ h1 {
 }
 
 .highlight a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
 }
 
-a:focus, a:hover {
+a:link, a:visited {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a:hover, a:focus {
+    text-decoration: none !important;
+    color: inherit;
     outline: none;
-    text-decoration: none;
 }
 
 .job-date {
@@ -151,14 +157,14 @@ a:focus, a:hover {
 }
 
 .National {
-    font-size: bold;
+    font-weight: bold;
     font-size: 16px;
     line-height: 20px;
     color: #FB6D3A;
 }
 
 .managment {
-    font-style: bold;
+    font-weight: bold;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
