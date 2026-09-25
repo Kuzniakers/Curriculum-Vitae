@@ -1,7 +1,12 @@
 /* =========================================================
    CV - KONRAD KUŹNIAK
    FULL STYLE.CSS
-   Optimized for A4 / PDF export
+   A4 / PDF optimized
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL
    ========================================================= */
 
 * {
@@ -12,37 +17,50 @@ html,
 body {
     margin: 0;
     padding: 0;
+
     width: 100%;
     min-height: 100%;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+
     background: #faf5f5;
+
     color: #1f1f1f;
 }
 
+
 /* =========================================================
-   PAGE / A4
+   PRINT PAGE
    ========================================================= */
 
 @page {
     size: A4;
+
     margin: 0;
 }
 
+
+/* =========================================================
+   MAIN WRAPPER
+   ========================================================= */
+
 .wrapper {
     display: flex;
+
     flex-direction: row-reverse;
+
+    align-items: stretch;
 
     width: 210mm;
     max-width: 210mm;
 
     margin: 0 auto;
-    background: #ffffff;
 
-    align-items: stretch;
+    background: #ffffff;
 }
+
 
 /* =========================================================
    MAIN CONTENT
@@ -50,20 +68,30 @@ body {
 
 main {
     width: 148mm;
+
     flex: 0 0 148mm;
 
-    padding: 15mm 12mm 14mm 15mm;
+    min-width: 0;
 
-    font-size: 9.5pt;
-    line-height: 1.4;
+    padding:
+
+        15mm
+        12mm
+        14mm
+        15mm;
 
     background: #ffffff;
 
-    min-width: 0;
+    font-size: 9.5pt;
+
+    line-height: 1.4;
 }
 
-/* Prevent text from being cut on the right */
+
+/* Prevent text overflowing outside the A4 page */
+
 main,
+main section,
 main div,
 main p,
 main li,
@@ -76,33 +104,44 @@ main p,
 main li,
 main a {
     overflow-wrap: break-word;
+
     word-wrap: break-word;
 }
 
+
 /* =========================================================
-   LEFT SIDEBAR
+   SIDEBAR
    ========================================================= */
 
 .nav-bar {
     width: 62mm;
+
     flex: 0 0 62mm;
 
-    background: #1f2c3d;
-    color: #ffffff;
-
-    padding: 8mm 7mm 10mm 7mm;
-
     min-width: 0;
+
+    padding:
+
+        8mm
+        7mm
+        10mm
+        7mm;
+
+    background: #1f2c3d;
+
+    color: #ffffff;
 }
 
 .nav-bar a {
     color: #ffffff;
+
     text-decoration: none;
 }
 
 .nav-bar a:hover {
     text-decoration: underline;
 }
+
 
 /* =========================================================
    PHOTO
@@ -112,17 +151,29 @@ main a {
     display: block;
 
     width: 31mm;
+
     height: 31mm;
 
     object-fit: cover;
 
     border-radius: 50%;
 
-    margin: 4mm auto 9mm auto;
+    margin:
+
+        4mm
+        auto
+        9mm
+        auto;
 }
+
+
+/* =========================================================
+   ICONS
+   ========================================================= */
 
 .icon {
     width: 4.5mm;
+
     height: 4.5mm;
 
     vertical-align: middle;
@@ -130,99 +181,131 @@ main a {
 
 .icongit {
     width: 4.8mm;
+
     height: 4.8mm;
 
     border-radius: 50%;
+
     vertical-align: middle;
 }
 
+
 /* =========================================================
-   PROFILE / MAIN DESCRIPTION
+   MAIN PROFILE
    ========================================================= */
 
 .main-description {
     width: 100%;
-    max-width: 100%;
 
-    margin: 0 0 7mm 0;
+    margin:
+
+        0
+        0
+        7mm
+        0;
 }
 
+
 .job-title {
-    margin: 0 0 3mm 0;
+    margin:
+
+        0
+        0
+        3mm
+        0;
 
     font-size: 10pt;
+
     font-weight: 700;
 
     color: #111111;
 }
 
+
 main h1 {
-    margin: 0 0 5mm 0;
+    margin:
+
+        0
+        0
+        5mm
+        0;
 
     font-size: 24pt;
+
     line-height: 1.1;
 
     color: #111111;
 }
 
-.description {
-    margin-top: 0;
-    margin-bottom: 4.5mm;
-
-    padding-left: 0;
-
-    font-size: 9.5pt;
-    line-height: 1.45;
-}
-
-p.description {
-    padding-left: 0;
-}
-
-/* Bullet lists */
-ul.description {
-    padding-left: 5mm;
-}
-
-ul.description li {
-    margin-bottom: 1mm;
-}
 
 /* =========================================================
-   HEADINGS
+   SECTION HEADINGS
    ========================================================= */
 
 .header-primary {
-    margin: 7mm 0 3.5mm 0;
+    margin:
+
+        7mm
+        0
+        3.5mm
+        0;
 
     font-size: 14pt;
+
     line-height: 1.2;
 
     color: #111111;
 
+    break-after: avoid-page;
+
     page-break-after: avoid;
-    break-after: avoid;
 }
 
+
+/* First heading after profile does not need huge gap */
+
+.professional-experience .header-primary {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   JOB / COURSE / EDUCATION TITLES
+   ========================================================= */
+
 .job-name {
-    margin: 3.5mm 0 1.5mm 0;
+    margin:
+
+        3.5mm
+        0
+        1.5mm
+        0;
 
     font-size: 10.5pt;
+
     line-height: 1.25;
 
     color: #111111;
 
-    page-break-after: avoid;
     break-after: avoid;
+
+    page-break-after: avoid;
 }
+
+
+/* =========================================================
+   ORANGE COMPANY / EDUCATION / COURSE NAME
+   ========================================================= */
 
 .highlight {
     color: #ef6a4c;
+
     font-weight: 700;
 }
 
 .highlight a {
     color: #ef6a4c;
+
     text-decoration: none;
 }
 
@@ -230,25 +313,120 @@ ul.description li {
     text-decoration: underline;
 }
 
+
 /* =========================================================
    DATES
    ========================================================= */
 
 .job-date {
-    margin: 0 0 2.5mm 0;
+    margin:
+
+        0
+        0
+        2.5mm
+        0;
 
     font-size: 8.5pt;
+
     line-height: 1.3;
+
+    font-weight: 400;
 
     color: #555555;
 
-    page-break-after: avoid;
     break-after: avoid;
+
+    page-break-after: avoid;
 }
 
-.job-date b {
-    font-weight: 400;
+
+/* =========================================================
+   SECTION INFORMATION
+   e.g. "Click on..."
+   ========================================================= */
+
+.section-information {
+    margin:
+
+        0
+        0
+        4mm
+        0;
+
+    font-size: 8.5pt;
+
+    line-height: 1.3;
+
+    color: #555555;
 }
+
+
+/* =========================================================
+   DESCRIPTION LISTS
+   THIS IS THE IMPORTANT PART FOR YOUR BULLETS
+   ========================================================= */
+
+.description {
+    margin-top: 0;
+
+    margin-bottom: 4.5mm;
+
+    font-size: 9.5pt;
+
+    line-height: 1.45;
+}
+
+
+/*
+   Every UL with class .description now has exactly
+   the same indentation.
+
+   Therefore Professional Experience and Courses
+   have IDENTICAL bullet alignment.
+*/
+
+ul.description {
+    margin-top: 0;
+
+    padding-left: 5mm;
+}
+
+
+ul.description li {
+    margin-bottom: 1mm;
+
+    padding-left: 0;
+
+    list-style-position: outside;
+}
+
+
+/*
+   Paragraph description, for profile summary.
+*/
+
+p.description {
+    padding-left: 0;
+}
+
+
+/* =========================================================
+   EXPERIENCE
+   ========================================================= */
+
+.experience-item {
+    width: 100%;
+
+    margin-bottom: 5mm;
+}
+
+
+/* Remove unnecessary space after last experience */
+
+.experience-item:last-child {
+    margin-bottom: 0;
+}
+
 
 /* =========================================================
    PROJECTS
@@ -256,163 +434,260 @@ ul.description li {
 
 .projects {
     width: 100%;
-    max-width: 100%;
 
-    margin-bottom: 6mm;
+    margin-bottom: 5mm;
 }
+
 
 .list-primary {
     margin: 0;
+
     padding-left: 5mm;
 
     font-size: 9.5pt;
-    line-height: 1.4;
+
+    line-height: 1.45;
 }
+
 
 .list-primary li {
     margin-bottom: 1.2mm;
 }
 
+
 .list-primary-item {
     color: #222222;
+
     text-decoration: none;
 }
+
 
 .list-primary-item:hover {
     text-decoration: underline;
 }
 
+
 /* =========================================================
-   CONTACT SIDEBAR
+   EDUCATION
+   ========================================================= */
+
+.education-section {
+    width: 100%;
+
+    break-inside: avoid-page;
+
+    page-break-inside: avoid;
+}
+
+
+.education-item {
+    margin-bottom: 5mm;
+}
+
+
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   COURSES
+   ========================================================= */
+
+.courses-section {
+    width: 100%;
+}
+
+
+.course-item {
+    width: 100%;
+
+    margin-bottom: 5mm;
+}
+
+
+/*
+   Keep title + date + start of list together if possible.
+*/
+
+.course-item .job-name,
+.course-item .job-date {
+    break-after: avoid;
+
+    page-break-after: avoid;
+}
+
+
+/*
+   IMPORTANT:
+
+   We intentionally DO NOT use:
+
+   main > div > li
+
+   anymore.
+
+   All course bullets are inside:
+
+   <ul class="description">
+
+   exactly like Professional Experience.
+*/
+
+
+/* =========================================================
+   GENERIC MAIN LIST TEXT
+   ========================================================= */
+
+main li {
+    font-size: 9pt;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   GDPR
+   ========================================================= */
+
+.gdpr-section {
+    width: 100%;
+
+    margin-top: 6mm;
+
+    padding-bottom: 3mm;
+}
+
+
+.gdpr-section h5 {
+    margin:
+
+        0
+        0
+        2.5mm
+        0;
+
+    font-size: 9pt;
+
+    line-height: 1.3;
+
+    font-style: italic;
+}
+
+
+.gdpr-section p {
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 8pt;
+
+    line-height: 1.35;
+
+    font-style: italic;
+
+    white-space: normal;
+
+    overflow: visible;
+
+    overflow-wrap: break-word;
+
+    word-break: normal;
+}
+
+
+/* =========================================================
+   SIDEBAR CONTACT
    ========================================================= */
 
 .contact-block {
     margin-top: 0;
+
     margin-bottom: 8mm;
 }
 
+
 .contact-links {
-    margin: 0 0 3.5mm 0;
+    margin:
+
+        0
+        0
+        3.5mm
+        0;
 
     font-size: 8.5pt;
+
     line-height: 1.35;
 
     overflow-wrap: anywhere;
 }
 
+
 .Bold {
     font-weight: 700;
 }
 
+
+/* =========================================================
+   SIDEBAR HEADINGS
+   ========================================================= */
+
 .LeftHeader {
-    margin: 0 0 4mm 0;
+    margin:
+
+        0
+        0
+        4mm
+        0;
 
     font-size: 14pt;
+
     line-height: 1.2;
 
     color: #ffffff;
 }
 
+
 /* =========================================================
-   SKILLS
+   SIDEBAR SKILLS
    ========================================================= */
 
 .TechSkillsBlock {
     margin-top: 8mm;
 }
 
+
 .ListSecondary {
     margin: 0;
+
     padding-left: 5mm;
 
     font-size: 8.5pt;
+
     line-height: 1.45;
 }
 
+
 .ListSecondary li {
     margin-bottom: 1.2mm;
+
     color: #ef6a4c;
 }
+
 
 .LeftSkills {
     color: #ffffff;
 }
 
+
 .ListSecondary-link {
     color: #ffffff;
+
     text-decoration: none;
 }
 
-/* =========================================================
-   COURSE / EDUCATION ITEMS
-   ========================================================= */
-
-main li {
-    font-size: 9pt;
-    line-height: 1.4;
-}
-
-/* Course bullets - align with Professional Experience bullets */
-main > div > li {
-    margin-left: 6mm;
-    padding-left: 0;
-    margin-bottom: 1mm;
-
-    list-style-position: outside;
-}
-
-main h5 {
-    margin: 5mm 0 2.5mm 0;
-
-    font-size: 9.5pt;
-    line-height: 1.3;
-}
-
-/* =========================================================
-   GDPR
-   ========================================================= */
-
-main em {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-}
-
-main em p {
-    width: 100%;
-    max-width: 100%;
-
-    margin: 0;
-
-    font-size: 8pt;
-    line-height: 1.35;
-
-    white-space: normal;
-    overflow: visible;
-
-    overflow-wrap: break-word;
-    word-break: normal;
-}
-
-/* =========================================================
-   REMOVE EXCESSIVE <br> FROM MAIN LAYOUT
-   ========================================================= */
-
-/*
-   Your HTML contains a lot of standalone <br>.
-   They waste a large amount of vertical space.
-   Do NOT hide <br> inside .highlight because those
-   separate position and company/course name.
-*/
-
-main > br,
-main > div > br {
-    display: none;
-}
-
-.highlight br {
-    display: initial;
-}
 
 /* =========================================================
    PAGE BREAK CONTROL
@@ -421,25 +696,20 @@ main > div > br {
 .job-name,
 .job-date {
     break-inside: avoid;
+
     page-break-inside: avoid;
 }
 
-/*
-   Avoid leaving a heading alone at the bottom
-   of a PDF page.
-*/
+
 .header-primary {
     break-after: avoid-page;
+
     page-break-after: avoid;
 }
 
-/*
-   Individual job/course blocks are allowed to flow,
-   otherwise Chrome may create huge blank areas.
-*/
 
 /* =========================================================
-   PRINT
+   PRINT SETTINGS
    ========================================================= */
 
 @media print {
@@ -447,17 +717,22 @@ main > div > br {
     html,
     body {
         width: 210mm;
+
         margin: 0;
+
         padding: 0;
 
         background: #ffffff;
 
         -webkit-print-color-adjust: exact;
+
         print-color-adjust: exact;
     }
 
+
     .wrapper {
         width: 210mm;
+
         max-width: 210mm;
 
         margin: 0;
@@ -465,27 +740,29 @@ main > div > br {
         box-shadow: none;
     }
 
+
     main {
         width: 148mm;
+
         flex-basis: 148mm;
 
         overflow: visible;
     }
 
+
     .nav-bar {
         width: 62mm;
+
         flex-basis: 62mm;
 
         -webkit-print-color-adjust: exact;
+
         print-color-adjust: exact;
     }
+
 
     a {
         text-decoration: none;
     }
-}
 
-.education-section {
-    break-inside: avoid-page;
-    page-break-inside: avoid;
 }
