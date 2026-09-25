@@ -870,7 +870,7 @@ main li {
        ===================================================== */
 
     .main-description {
-        margin-bottom: 4mm;
+        margin-bottom: 6mm;
     }
 
 
@@ -880,12 +880,17 @@ main li {
 
 
     main h1 {
-        margin-bottom: 3mm;
+        margin-bottom: 4mm;
     }
 
 
     p.description {
         line-height: 1.32;
+    }
+
+
+    .main-description p.description {
+        line-height: 1.4;
     }
 
 
@@ -895,37 +900,37 @@ main li {
 
     .professional-experience .header-primary {
         margin-top: 0;
-        margin-bottom: 2mm;
+        margin-bottom: 3mm;
     }
 
 
     .experience-item {
-        margin-bottom: 2.2mm;
+        margin-bottom: 4.5mm;
     }
 
 
     .professional-experience .job-name {
-        margin-top: 1.8mm;
-        margin-bottom: 0.6mm;
+        margin-top: 2.5mm;
+        margin-bottom: 0.8mm;
     }
 
 
     .professional-experience .job-date {
-        margin-bottom: 1mm;
+        margin-bottom: 1.8mm;
     }
 
 
     .professional-experience .description {
-        margin-bottom: 1.8mm;
+        margin-bottom: 2mm;
 
-        line-height: 1.25;
+        line-height: 1.38;
     }
 
 
     .professional-experience ul.description li {
-        margin-bottom: 0.15mm;
+        margin-bottom: 0.65mm;
 
-        line-height: 1.25;
+        line-height: 1.38;
     }
 
 
@@ -936,7 +941,7 @@ main li {
     .projects {
         width: 100%;
 
-        margin-top: 1mm;
+        margin-top: 3mm;
         margin-bottom: 2mm;
 
         break-inside: avoid !important;
@@ -945,8 +950,8 @@ main li {
 
 
     .projects .header-primary {
-        margin-top: 2mm;
-        margin-bottom: 1.5mm;
+        margin-top: 3mm;
+        margin-bottom: 2.5mm;
     }
 
 
@@ -966,12 +971,13 @@ main li {
         padding-left: 4.5mm;
 
         font-size: 9.5pt;
-        line-height: 1.22;
+        line-height: 1.4;
     }
 
 
     .projects .list-primary li {
-        margin-bottom: 0.25mm;
+        margin-bottom: 0.8mm;
+        line-height: 1.4;
     }
 
 
