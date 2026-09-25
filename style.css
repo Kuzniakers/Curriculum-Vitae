@@ -1,261 +1,482 @@
+/* =========================================================
+   CV - KONRAD KUŹNIAK
+   FULL STYLE.CSS
+   Optimized for A4 / PDF export
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background: #faf5f5;
+    color: #1f1f1f;
+}
+
+/* =========================================================
+   PAGE / A4
+   ========================================================= */
+
+@page {
+    size: A4;
+    margin: 0;
 }
 
 .wrapper {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    width: 1200px;
+
+    width: 210mm;
+    max-width: 210mm;
+
     margin: 0 auto;
-    background: #FFFFFF;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+
+    align-items: stretch;
 }
 
-aside {
-    width: 370px;
-    background: #1E2939;
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+main {
+    width: 148mm;
+    flex: 0 0 148mm;
+
+    padding: 15mm 12mm 14mm 15mm;
+
+    font-size: 9.5pt;
+    line-height: 1.4;
+
+    background: #ffffff;
+
+    min-width: 0;
 }
+
+/* Prevent text from being cut on the right */
+main,
+main div,
+main p,
+main li,
+main a,
+main span {
+    max-width: 100%;
+}
+
+main p,
+main li,
+main a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* =========================================================
+   LEFT SIDEBAR
+   ========================================================= */
+
+.nav-bar {
+    width: 62mm;
+    flex: 0 0 62mm;
+
+    background: #1f2c3d;
+    color: #ffffff;
+
+    padding: 8mm 7mm 10mm 7mm;
+
+    min-width: 0;
+}
+
+.nav-bar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   PHOTO
+   ========================================================= */
 
 .cv-photo {
-    margin-top: 30px;
-    margin-left: 40px;
+    display: block;
+
+    width: 31mm;
+    height: 31mm;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin: 4mm auto 9mm auto;
 }
 
-.LeftHeader {
-    color: #FFFFFF;
+.icon {
+    width: 4.5mm;
+    height: 4.5mm;
+
+    vertical-align: middle;
+}
+
+.icongit {
+    width: 4.8mm;
+    height: 4.8mm;
+
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+/* =========================================================
+   PROFILE / MAIN DESCRIPTION
+   ========================================================= */
+
+.main-description {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0 0 7mm 0;
+}
+
+.job-title {
+    margin: 0 0 3mm 0;
+
+    font-size: 10pt;
+    font-weight: 700;
+
+    color: #111111;
+}
+
+main h1 {
+    margin: 0 0 5mm 0;
+
+    font-size: 24pt;
+    line-height: 1.1;
+
+    color: #111111;
+}
+
+.description {
+    margin-top: 0;
+    margin-bottom: 4.5mm;
+
+    padding-left: 0;
+
+    font-size: 9.5pt;
+    line-height: 1.45;
+}
+
+p.description {
+    padding-left: 0;
+}
+
+/* Bullet lists */
+ul.description {
+    padding-left: 5mm;
+}
+
+ul.description li {
+    margin-bottom: 1mm;
+}
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+.header-primary {
+    margin: 7mm 0 3.5mm 0;
+
+    font-size: 14pt;
+    line-height: 1.2;
+
+    color: #111111;
+
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+.job-name {
+    margin: 3.5mm 0 1.5mm 0;
+
+    font-size: 10.5pt;
+    line-height: 1.25;
+
+    color: #111111;
+
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+.highlight {
+    color: #ef6a4c;
+    font-weight: 700;
+}
+
+.highlight a {
+    color: #ef6a4c;
+    text-decoration: none;
+}
+
+.highlight a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   DATES
+   ========================================================= */
+
+.job-date {
+    margin: 0 0 2.5mm 0;
+
+    font-size: 8.5pt;
+    line-height: 1.3;
+
+    color: #555555;
+
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+.job-date b {
+    font-weight: 400;
+}
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
+.projects {
+    width: 100%;
+    max-width: 100%;
+
+    margin-bottom: 6mm;
+}
+
+.list-primary {
+    margin: 0;
+    padding-left: 5mm;
+
+    font-size: 9.5pt;
+    line-height: 1.4;
+}
+
+.list-primary li {
+    margin-bottom: 1.2mm;
+}
+
+.list-primary-item {
+    color: #222222;
+    text-decoration: none;
+}
+
+.list-primary-item:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   CONTACT SIDEBAR
+   ========================================================= */
+
+.contact-block {
+    margin-top: 0;
+    margin-bottom: 8mm;
 }
 
 .contact-links {
-    color: #FFFFFF;
-    font-size: 14px;
+    margin: 0 0 3.5mm 0;
+
+    font-size: 8.5pt;
+    line-height: 1.35;
+
+    overflow-wrap: anywhere;
 }
 
 .Bold {
     font-weight: 700;
 }
 
+.LeftHeader {
+    margin: 0 0 4mm 0;
+
+    font-size: 14pt;
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.TechSkillsBlock {
+    margin-top: 8mm;
+}
+
 .ListSecondary {
-    color: #FB6D3A;
-    font-size: 14px;
-    line-height: 24px;
-    margin-left: 0;
-    padding-left: 0;
-    list-style-position: inside;
+    margin: 0;
+    padding-left: 5mm;
+
+    font-size: 8.5pt;
+    line-height: 1.45;
+}
+
+.ListSecondary li {
+    margin-bottom: 1.2mm;
+    color: #ef6a4c;
 }
 
 .LeftSkills {
-    color: #FFFFFF;
-    line-height: 24px;
-    margin-left: 0px;
-    padding-left: 0px;
+    color: #ffffff;
 }
 
-.contact-block {
-    margin-top: 51px;
-    margin-left: 40px;
-    margin-right: 8px;
-}
-
-.TechSkillsBlock {
-    margin-top: 47px;
-    margin-left: 40px;
-}
-
-main {
-    padding: 102px 88px 102px 88px;
-}
-
-.main-description {
-    width: 400px;
-}
-
-.job-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-h1 {
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 55px;
-}
-
-.description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-    margin-bottom: 40px;
-    margin-left: 0;
-    padding-left: 0;
-    list-style-position: inside;
-}
-
-.projects {
-    width: 485px;
-    margin-bottom: 51px;
-}
-
-.list-primary {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: #000000;
-    padding-left: 0;
-    list-style-position: inside;
-}
-
-.list-primary-item {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-    text-decoration: none;
-}
-
-.header-primary {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    margin-bottom: 12px;
-}
-
-.job-name {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-}
-
-.highlight {
-    color: #FB6D3A;
-}
-
-.highlight a {
-    text-decoration: none !important;
-    color: inherit;
-}
-
-a:link, a:visited {
-    text-decoration: none !important;
-    color: inherit;
-}
-
-a:hover, a:focus {
-    text-decoration: none !important;
-    color: inherit;
-    outline: none;
-}
-
-.job-date {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    color: #a8a8a8;
-}
-
-.National {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FB6D3A;
-}
-
-.managment {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-}
 .ListSecondary-link {
-    color: #FB6D3A;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
 }
 
-.ListSecondary-link:hover {
-    text-decoration: underline;
+/* =========================================================
+   COURSE / EDUCATION ITEMS
+   ========================================================= */
+
+main li {
+    font-size: 9pt;
+    line-height: 1.4;
 }
 
-main {
-    padding-top: 48px;
-    padding-bottom: 48px;
+main h5 {
+    margin: 5mm 0 2.5mm 0;
+
+    font-size: 9.5pt;
+    line-height: 1.3;
 }
 
-.job-title {
-    margin: 0 0 8px;
+/* =========================================================
+   GDPR
+   ========================================================= */
+
+main em {
+    display: block;
+    width: 100%;
+    max-width: 100%;
 }
 
-main h1 {
-    margin: 0 0 16px;
+main em p {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+
+    font-size: 8pt;
+    line-height: 1.35;
+
+    white-space: normal;
+    overflow: visible;
+
+    overflow-wrap: break-word;
+    word-break: normal;
 }
 
-/* Nagłówki sekcji, np. Professional Experience */
-.header-primary {
-    margin: 24px 0 10px;
-}
+/* =========================================================
+   REMOVE EXCESSIVE <br> FROM MAIN LAYOUT
+   ========================================================= */
 
-/* Stanowiska, uczelnie i nazwy kursów */
-.job-name {
-    margin: 14px 0 4px;
-}
+/*
+   Your HTML contains a lot of standalone <br>.
+   They waste a large amount of vertical space.
+   Do NOT hide <br> inside .highlight because those
+   separate position and company/course name.
+*/
 
-/* Pierwsze stanowisko bez dodatkowej przerwy nad nim */
-.header-primary + .job-name {
-    margin-top: 0;
-}
-
-.job-date {
-    margin: 0 0 8px;
-}
-
-/* Wstęp oraz listy obowiązków */
-.description {
-    margin-top: 0;
-    margin-bottom: 18px;
-}
-
-.projects {
-    margin-bottom: 24px;
-}
-
-.list-primary {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* Puste wiersze między blokami w Twoim HTML */
 main > br,
 main > div > br {
     display: none;
 }
 
-/* Lewa kolumna */
-.contact-block,
-.TechSkillsBlock {
-    margin-top: 28px;
+.highlight br {
+    display: initial;
 }
 
-.LeftHeader {
-    margin-top: 0;
-    margin-bottom: 10px;
+/* =========================================================
+   PAGE BREAK CONTROL
+   ========================================================= */
+
+.job-name,
+.job-date {
+    break-inside: avoid;
+    page-break-inside: avoid;
 }
 
-.ListSecondary {
-    margin-top: 0;
-    margin-bottom: 0;
+/*
+   Avoid leaving a heading alone at the bottom
+   of a PDF page.
+*/
+.header-primary {
+    break-after: avoid-page;
+    page-break-after: avoid;
 }
 
-/* Odstępy przy klauzuli */
-main h5 {
-    margin: 18px 0 8px;
+/*
+   Individual job/course blocks are allowed to flow,
+   otherwise Chrome may create huge blank areas.
+*/
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@media print {
+
+    html,
+    body {
+        width: 210mm;
+        margin: 0;
+        padding: 0;
+
+        background: #ffffff;
+
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .wrapper {
+        width: 210mm;
+        max-width: 210mm;
+
+        margin: 0;
+
+        box-shadow: none;
+    }
+
+    main {
+        width: 148mm;
+        flex-basis: 148mm;
+
+        overflow: visible;
+    }
+
+    .nav-bar {
+        width: 62mm;
+        flex-basis: 62mm;
+
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
 
-main em > p {
-    margin-top: 0;
-    margin-bottom: 0;
+.education-section {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
 }
