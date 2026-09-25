@@ -34,11 +34,34 @@ body {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 400;
 
     background: #faf5f5;
 
     color: var(--text-color);
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+   Montserrat for headings; Arial for small body text.
+   Applies to both screen and print.
+   ========================================================= */
+
+h1,
+h2,
+h3,
+.job-title,
+.header-primary,
+.job-name,
+.nav-bar .LeftHeader {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.main-description p.description {
+    font-size: 10pt;
 }
 
 
@@ -488,7 +511,7 @@ ul.description li {
    ========================================================= */
 
 main li {
-    font-size: 9pt;
+    font-size: 9.5pt;
 
     line-height: 1.4;
 }
@@ -544,7 +567,7 @@ main li {
         3.5mm
         0;
 
-    font-size: 8.5pt;
+    font-size: 9pt;
     line-height: 1.35;
 
     overflow-wrap: anywhere;
@@ -590,7 +613,7 @@ main li {
 
     padding-left: 5mm;
 
-    font-size: 8.5pt;
+    font-size: 9pt;
     line-height: 1.45;
 }
 
@@ -942,7 +965,7 @@ main li {
 
         padding-left: 4.5mm;
 
-        font-size: 8.8pt;
+        font-size: 9.5pt;
         line-height: 1.22;
     }
 
