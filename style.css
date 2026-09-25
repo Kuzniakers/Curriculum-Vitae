@@ -793,44 +793,45 @@ main li {
 
 
     /* =====================================================
-       PRINT - SIDEBAR COMPRESSION
+       PRINT - SIDEBAR SPACING
+       Odstepy dopasowane do obecnej tresci panelu na stronie 1.
        ===================================================== */
 
-    .cv-photo {
+    .nav-bar .cv-photo {
         margin-top: 2mm;
-        margin-bottom: 5mm;
+        margin-bottom: 7mm;
     }
 
 
-    .contact-block {
-        margin-bottom: 4.5mm;
+    .nav-bar .contact-block {
+        margin-bottom: 8mm;
     }
 
 
-    .contact-links {
-        margin-bottom: 2mm;
+    .nav-bar .contact-links {
+        margin-bottom: 2.5mm;
 
         line-height: 1.25;
     }
 
 
-    .TechSkillsBlock {
-        margin-top: 4.5mm;
+    .nav-bar .TechSkillsBlock {
+        margin-top: 8mm;
     }
 
 
-    .LeftHeader {
-        margin-bottom: 2.5mm;
+    .nav-bar .LeftHeader {
+        margin-bottom: 3.5mm;
     }
 
 
-    .ListSecondary {
+    .nav-bar .ListSecondary {
         line-height: 1.28;
     }
 
 
-    .ListSecondary li {
-        margin-bottom: 0.45mm;
+    .nav-bar .ListSecondary li {
+        margin-bottom: 0.6mm;
     }
 
 
