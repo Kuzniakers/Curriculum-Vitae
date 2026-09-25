@@ -180,3 +180,82 @@ a:hover, a:focus {
 .ListSecondary-link:hover {
     text-decoration: underline;
 }
+
+main {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.job-title {
+    margin: 0 0 8px;
+}
+
+main h1 {
+    margin: 0 0 16px;
+}
+
+/* Nagłówki sekcji, np. Professional Experience */
+.header-primary {
+    margin: 24px 0 10px;
+}
+
+/* Stanowiska, uczelnie i nazwy kursów */
+.job-name {
+    margin: 14px 0 4px;
+}
+
+/* Pierwsze stanowisko bez dodatkowej przerwy nad nim */
+.header-primary + .job-name {
+    margin-top: 0;
+}
+
+.job-date {
+    margin: 0 0 8px;
+}
+
+/* Wstęp oraz listy obowiązków */
+.description {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.projects {
+    margin-bottom: 24px;
+}
+
+.list-primary {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Puste wiersze między blokami w Twoim HTML */
+main > br,
+main > div > br {
+    display: none;
+}
+
+/* Lewa kolumna */
+.contact-block,
+.TechSkillsBlock {
+    margin-top: 28px;
+}
+
+.LeftHeader {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.ListSecondary {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Odstępy przy klauzuli */
+main h5 {
+    margin: 18px 0 8px;
+}
+
+main em > p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
