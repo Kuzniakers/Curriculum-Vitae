@@ -1,6 +1,6 @@
 /* =========================================================
    CV - KONRAD KUŹNIAK
-   FULL STYLE.CSS
+   FINAL STYLE.CSS
    A4 / PDF optimized
    ========================================================= */
 
@@ -22,6 +22,10 @@ body {
     min-height: 100%;
 }
 
+html {
+    background: #ffffff;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 
@@ -37,7 +41,6 @@ body {
 
 @page {
     size: A4;
-
     margin: 0;
 }
 
@@ -48,7 +51,6 @@ body {
 
 .wrapper {
     display: flex;
-
     flex-direction: row-reverse;
 
     align-items: stretch;
@@ -58,7 +60,19 @@ body {
 
     margin: 0 auto;
 
-    background: #ffffff;
+    /*
+       Important:
+       creates a continuous blue sidebar behind the content
+       instead of relying only on .nav-bar height.
+    */
+    background:
+        linear-gradient(
+            to right,
+            #1f2c3d 0,
+            #1f2c3d 62mm,
+            #ffffff 62mm,
+            #ffffff 100%
+        );
 }
 
 
@@ -68,27 +82,24 @@ body {
 
 main {
     width: 148mm;
-
     flex: 0 0 148mm;
 
     min-width: 0;
 
     padding:
-
-        15mm
         12mm
-        14mm
+        12mm
+        9mm
         15mm;
 
-    background: #ffffff;
+    background: transparent;
 
     font-size: 9.5pt;
-
     line-height: 1.4;
 }
 
 
-/* Prevent text overflowing outside the A4 page */
+/* Prevent text overflowing outside A4 */
 
 main,
 main section,
@@ -104,7 +115,6 @@ main p,
 main li,
 main a {
     overflow-wrap: break-word;
-
     word-wrap: break-word;
 }
 
@@ -115,18 +125,21 @@ main a {
 
 .nav-bar {
     width: 62mm;
-
     flex: 0 0 62mm;
 
     min-width: 0;
 
     padding:
-
-        8mm
         7mm
-        10mm
+        7mm
+        8mm
         7mm;
 
+    /*
+       Background is also here for normal browser display.
+       During printing the wrapper/body also create the
+       continuous sidebar background.
+    */
     background: #1f2c3d;
 
     color: #ffffff;
@@ -134,7 +147,6 @@ main a {
 
 .nav-bar a {
     color: #ffffff;
-
     text-decoration: none;
 }
 
@@ -151,7 +163,6 @@ main a {
     display: block;
 
     width: 31mm;
-
     height: 31mm;
 
     object-fit: cover;
@@ -159,10 +170,9 @@ main a {
     border-radius: 50%;
 
     margin:
-
-        4mm
+        3mm
         auto
-        9mm
+        6mm
         auto;
 }
 
@@ -173,7 +183,6 @@ main a {
 
 .icon {
     width: 4.5mm;
-
     height: 4.5mm;
 
     vertical-align: middle;
@@ -181,7 +190,6 @@ main a {
 
 .icongit {
     width: 4.8mm;
-
     height: 4.8mm;
 
     border-radius: 50%;
@@ -198,24 +206,21 @@ main a {
     width: 100%;
 
     margin:
-
         0
         0
-        7mm
+        5.5mm
         0;
 }
 
 
 .job-title {
     margin:
-
         0
         0
-        3mm
+        2.5mm
         0;
 
     font-size: 10pt;
-
     font-weight: 700;
 
     color: #111111;
@@ -224,14 +229,12 @@ main a {
 
 main h1 {
     margin:
-
         0
         0
-        5mm
+        4mm
         0;
 
     font-size: 24pt;
-
     line-height: 1.1;
 
     color: #111111;
@@ -244,25 +247,22 @@ main h1 {
 
 .header-primary {
     margin:
-
-        7mm
+        5.5mm
         0
-        3.5mm
+        3mm
         0;
 
     font-size: 14pt;
-
     line-height: 1.2;
 
     color: #111111;
 
     break-after: avoid-page;
-
     page-break-after: avoid;
 }
 
 
-/* First heading after profile does not need huge gap */
+/* Professional Experience is directly below profile */
 
 .professional-experience .header-primary {
     margin-top: 0;
@@ -275,20 +275,17 @@ main h1 {
 
 .job-name {
     margin:
-
-        3.5mm
+        2.8mm
         0
-        1.5mm
+        1mm
         0;
 
     font-size: 10.5pt;
-
-    line-height: 1.25;
+    line-height: 1.23;
 
     color: #111111;
 
     break-after: avoid;
-
     page-break-after: avoid;
 }
 
@@ -320,14 +317,12 @@ main h1 {
 
 .job-date {
     margin:
-
         0
         0
-        2.5mm
+        1.8mm
         0;
 
     font-size: 8.5pt;
-
     line-height: 1.3;
 
     font-weight: 400;
@@ -335,27 +330,24 @@ main h1 {
     color: #555555;
 
     break-after: avoid;
-
     page-break-after: avoid;
 }
 
 
 /* =========================================================
    SECTION INFORMATION
-   e.g. "Click on..."
+   e.g. Click a project...
    ========================================================= */
 
 .section-information {
     margin:
-
         0
         0
-        4mm
+        2.5mm
         0;
 
     font-size: 8.5pt;
-
-    line-height: 1.3;
+    line-height: 1.25;
 
     color: #555555;
 }
@@ -363,26 +355,21 @@ main h1 {
 
 /* =========================================================
    DESCRIPTION LISTS
-   THIS IS THE IMPORTANT PART FOR YOUR BULLETS
    ========================================================= */
 
 .description {
     margin-top: 0;
-
-    margin-bottom: 4.5mm;
+    margin-bottom: 3.2mm;
 
     font-size: 9.5pt;
-
-    line-height: 1.45;
+    line-height: 1.35;
 }
 
 
 /*
-   Every UL with class .description now has exactly
-   the same indentation.
-
-   Therefore Professional Experience and Courses
-   have IDENTICAL bullet alignment.
+   IMPORTANT:
+   Experience and Courses both use the same UL,
+   so bullet indentation is identical.
 */
 
 ul.description {
@@ -393,7 +380,7 @@ ul.description {
 
 
 ul.description li {
-    margin-bottom: 1mm;
+    margin-bottom: 0.65mm;
 
     padding-left: 0;
 
@@ -401,30 +388,45 @@ ul.description li {
 }
 
 
-/*
-   Paragraph description, for profile summary.
-*/
-
 p.description {
     padding-left: 0;
 }
 
 
 /* =========================================================
-   EXPERIENCE
+   PROFESSIONAL EXPERIENCE
    ========================================================= */
 
 .experience-item {
     width: 100%;
 
-    margin-bottom: 5mm;
+    margin-bottom: 3.2mm;
 }
 
 
-/* Remove unnecessary space after last experience */
-
 .experience-item:last-child {
     margin-bottom: 0;
+}
+
+
+/* Slightly tighter spacing inside experience section */
+
+.professional-experience .job-name {
+    margin-top: 2.3mm;
+    margin-bottom: 0.8mm;
+}
+
+.professional-experience .job-date {
+    margin-bottom: 1.5mm;
+}
+
+.professional-experience .description {
+    margin-bottom: 2.6mm;
+}
+
+.professional-experience ul.description li {
+    margin-bottom: 0.45mm;
+    line-height: 1.30;
 }
 
 
@@ -435,7 +437,26 @@ p.description {
 .projects {
     width: 100%;
 
-    margin-bottom: 5mm;
+    margin-top: 1.5mm;
+    margin-bottom: 3mm;
+
+    /*
+       Prevent projects 1-2 being left on page one
+       and projects 3-5 starting page two.
+    */
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+
+.projects .header-primary {
+    margin-top: 3.5mm;
+    margin-bottom: 2mm;
+}
+
+
+.projects .section-information {
+    margin-bottom: 2mm;
 }
 
 
@@ -444,14 +465,13 @@ p.description {
 
     padding-left: 5mm;
 
-    font-size: 9.5pt;
-
-    line-height: 1.45;
+    font-size: 9pt;
+    line-height: 1.28;
 }
 
 
 .list-primary li {
-    margin-bottom: 1.2mm;
+    margin-bottom: 0.45mm;
 }
 
 
@@ -474,14 +494,15 @@ p.description {
 .education-section {
     width: 100%;
 
-    break-inside: avoid-page;
+    margin-top: 2mm;
 
+    break-inside: avoid-page;
     page-break-inside: avoid;
 }
 
 
 .education-item {
-    margin-bottom: 5mm;
+    margin-bottom: 3.8mm;
 }
 
 
@@ -502,13 +523,9 @@ p.description {
 .course-item {
     width: 100%;
 
-    margin-bottom: 4mm;
+    margin-bottom: 3.8mm;
 }
 
-
-/*
-   Keep title + date + start of list together if possible.
-*/
 
 .course-item .job-name,
 .course-item .job-date {
@@ -518,23 +535,6 @@ p.description {
 }
 
 
-/*
-   IMPORTANT:
-
-   We intentionally DO NOT use:
-
-   main > div > li
-
-   anymore.
-
-   All course bullets are inside:
-
-   <ul class="description">
-
-   exactly like Professional Experience.
-*/
-
-
 /* =========================================================
    GENERIC MAIN LIST TEXT
    ========================================================= */
@@ -542,7 +542,7 @@ p.description {
 main li {
     font-size: 9pt;
 
-    line-height: 1.4;
+    line-height: 1.35;
 }
 
 
@@ -551,16 +551,46 @@ main li {
    ========================================================= */
 
 .gdpr-section {
+    width: 100%;
+
     margin-top: 2mm;
+
     padding: 0;
 }
 
-.gdpr-section p {
+
+.gdpr-section h5 {
+    display: inline;
+
     margin: 0;
+
     font-size: 7.5pt;
-    line-height: 1.25;
+    line-height: 1.2;
+
     font-style: italic;
 }
+
+
+.gdpr-section p {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 7.5pt;
+    line-height: 1.2;
+
+    font-style: italic;
+
+    white-space: normal;
+
+    overflow: visible;
+
+    overflow-wrap: break-word;
+
+    word-break: normal;
+}
+
 
 /* =========================================================
    SIDEBAR CONTACT
@@ -569,21 +599,19 @@ main li {
 .contact-block {
     margin-top: 0;
 
-    margin-bottom: 8mm;
+    margin-bottom: 5.5mm;
 }
 
 
 .contact-links {
     margin:
-
         0
         0
-        3.5mm
+        2.5mm
         0;
 
     font-size: 8.5pt;
-
-    line-height: 1.35;
+    line-height: 1.28;
 
     overflow-wrap: anywhere;
 }
@@ -600,14 +628,12 @@ main li {
 
 .LeftHeader {
     margin:
-
         0
         0
-        4mm
+        2.8mm
         0;
 
     font-size: 14pt;
-
     line-height: 1.2;
 
     color: #ffffff;
@@ -619,7 +645,7 @@ main li {
    ========================================================= */
 
 .TechSkillsBlock {
-    margin-top: 6mm;
+    margin-top: 5.5mm;
 }
 
 
@@ -629,13 +655,12 @@ main li {
     padding-left: 5mm;
 
     font-size: 8.5pt;
-
-    line-height: 1.45;
+    line-height: 1.32;
 }
 
 
 .ListSecondary li {
-    margin-bottom: 0.8mm;
+    margin-bottom: 0.65mm;
 
     color: #ef6a4c;
 }
@@ -673,7 +698,7 @@ main li {
 
 
 /* =========================================================
-   PRINT SETTINGS
+   PRINT
    ========================================================= */
 
 @media print {
@@ -683,44 +708,70 @@ main li {
         width: 210mm;
 
         margin: 0;
-
         padding: 0;
 
-        background: #ffffff;
+        /*
+           This is what guarantees the dark blue strip
+           on every PDF page, even when .nav-bar content
+           itself ends earlier.
+        */
+        background:
+            linear-gradient(
+                to right,
+                #1f2c3d 0,
+                #1f2c3d 62mm,
+                #ffffff 62mm,
+                #ffffff 100%
+            );
 
         -webkit-print-color-adjust: exact;
-
         print-color-adjust: exact;
     }
 
 
     .wrapper {
         width: 210mm;
-
         max-width: 210mm;
 
         margin: 0;
 
+        background:
+            linear-gradient(
+                to right,
+                #1f2c3d 0,
+                #1f2c3d 62mm,
+                #ffffff 62mm,
+                #ffffff 100%
+            );
+
         box-shadow: none;
+
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 
 
     main {
         width: 148mm;
-
-        flex-basis: 148mm;
+        flex: 0 0 148mm;
 
         overflow: visible;
+
+        background: transparent;
     }
 
 
     .nav-bar {
         width: 62mm;
+        flex: 0 0 62mm;
 
-        flex-basis: 62mm;
+        /*
+           Transparent here because the page background
+           provides the continuous sidebar.
+        */
+        background: transparent;
 
         -webkit-print-color-adjust: exact;
-
         print-color-adjust: exact;
     }
 
@@ -729,107 +780,14 @@ main li {
         text-decoration: none;
     }
 
-}
-
-/* =========================================================
-   FINAL PDF FIT FIX
-   1. Keep all Languages on page 1
-   2. Fit all My Projects on page 1
-   ========================================================= */
-
-@media print {
-
-    /* =========================
-       SIDEBAR
-       ========================= */
-
-    /* Slightly reduce unused vertical space */
-    .cv-photo {
-        margin-top: 3mm;
-        margin-bottom: 7mm;
-    }
-
-    .contact-block {
-        margin-bottom: 6mm;
-    }
-
-    .contact-links {
-        margin-bottom: 2.7mm;
-        line-height: 1.3;
-    }
-
-    .TechSkillsBlock {
-        margin-top: 6mm;
-    }
-
-    .LeftHeader {
-        margin-bottom: 3mm;
-    }
-
-    .ListSecondary {
-        line-height: 1.35;
-    }
-
-    .ListSecondary li {
-        margin-bottom: 0.7mm;
-    }
-
-
-    /* =========================
-       PROFESSIONAL EXPERIENCE
-       ========================= */
 
     /*
-       We compact this section only slightly.
-       The goal is to recover enough space for
-       projects 3, 4 and 5 without making the CV cramped.
+       Protect whole Projects section.
     */
 
-    .professional-experience .experience-item {
-        margin-bottom: 3.3mm;
-    }
-
-    .professional-experience .job-name {
-        margin-top: 2.5mm;
-        margin-bottom: 1mm;
-    }
-
-    .professional-experience .job-date {
-        margin-bottom: 1.8mm;
-    }
-
-    .professional-experience .description {
-        margin-bottom: 3mm;
-    }
-
-    .professional-experience ul.description li {
-        margin-bottom: 0.7mm;
-    }
-
-
-    /* =========================
-       MY PROJECTS
-       ========================= */
-
     .projects {
-        margin-bottom: 4mm;
-    }
-
-    .projects .header-primary {
-        margin-top: 4.5mm;
-        margin-bottom: 2.5mm;
-    }
-
-    .projects .section-information {
-        margin-bottom: 2.5mm;
-    }
-
-    .projects .list-primary {
-        line-height: 1.35;
-    }
-
-    .projects .list-primary li {
-        margin-bottom: 0.6mm;
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 
 }
