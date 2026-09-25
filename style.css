@@ -502,7 +502,7 @@ p.description {
 .course-item {
     width: 100%;
 
-    margin-bottom: 5mm;
+    margin-bottom: 4mm;
 }
 
 
@@ -552,10 +552,8 @@ main li {
 
 .gdpr-section {
     width: 100%;
-
-    margin-top: 6mm;
-
-    padding-bottom: 3mm;
+    margin-top: 3mm;
+    padding-bottom: 0mm;
 }
 
 
