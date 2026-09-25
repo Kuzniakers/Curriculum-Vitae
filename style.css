@@ -352,6 +352,15 @@ main li {
     line-height: 1.4;
 }
 
+/* Course bullets - align with Professional Experience bullets */
+main > div > li {
+    margin-left: 6mm;
+    padding-left: 0;
+    margin-bottom: 1mm;
+
+    list-style-position: outside;
+}
+
 main h5 {
     margin: 5mm 0 2.5mm 0;
 
