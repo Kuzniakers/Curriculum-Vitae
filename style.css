@@ -730,3 +730,106 @@ main li {
     }
 
 }
+
+/* =========================================================
+   FINAL PDF FIT FIX
+   1. Keep all Languages on page 1
+   2. Fit all My Projects on page 1
+   ========================================================= */
+
+@media print {
+
+    /* =========================
+       SIDEBAR
+       ========================= */
+
+    /* Slightly reduce unused vertical space */
+    .cv-photo {
+        margin-top: 3mm;
+        margin-bottom: 7mm;
+    }
+
+    .contact-block {
+        margin-bottom: 6mm;
+    }
+
+    .contact-links {
+        margin-bottom: 2.7mm;
+        line-height: 1.3;
+    }
+
+    .TechSkillsBlock {
+        margin-top: 6mm;
+    }
+
+    .LeftHeader {
+        margin-bottom: 3mm;
+    }
+
+    .ListSecondary {
+        line-height: 1.35;
+    }
+
+    .ListSecondary li {
+        margin-bottom: 0.7mm;
+    }
+
+
+    /* =========================
+       PROFESSIONAL EXPERIENCE
+       ========================= */
+
+    /*
+       We compact this section only slightly.
+       The goal is to recover enough space for
+       projects 3, 4 and 5 without making the CV cramped.
+    */
+
+    .professional-experience .experience-item {
+        margin-bottom: 3.3mm;
+    }
+
+    .professional-experience .job-name {
+        margin-top: 2.5mm;
+        margin-bottom: 1mm;
+    }
+
+    .professional-experience .job-date {
+        margin-bottom: 1.8mm;
+    }
+
+    .professional-experience .description {
+        margin-bottom: 3mm;
+    }
+
+    .professional-experience ul.description li {
+        margin-bottom: 0.7mm;
+    }
+
+
+    /* =========================
+       MY PROJECTS
+       ========================= */
+
+    .projects {
+        margin-bottom: 4mm;
+    }
+
+    .projects .header-primary {
+        margin-top: 4.5mm;
+        margin-bottom: 2.5mm;
+    }
+
+    .projects .section-information {
+        margin-bottom: 2.5mm;
+    }
+
+    .projects .list-primary {
+        line-height: 1.35;
+    }
+
+    .projects .list-primary li {
+        margin-bottom: 0.6mm;
+    }
+
+}
