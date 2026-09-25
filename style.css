@@ -680,6 +680,26 @@ main li {
         print-color-adjust: exact !important;
     }
 
+   body::after {
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+
+    left: calc(var(--sidebar-width) - 0.18mm);
+
+    width: 0.35mm;
+
+    background: #ffffff !important;
+
+    z-index: 1;
+
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
 
     /*
        Remove flex from print layout.
